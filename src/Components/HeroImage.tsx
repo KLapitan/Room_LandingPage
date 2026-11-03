@@ -1,7 +1,7 @@
 
 
 import Button from "./Button";
-import type { MouseEvent } from "react";
+
 
 type ImageProps = {
 activeMobileImage:{
@@ -25,7 +25,7 @@ const HeroImage = ({activeMobileImage,activeDesktopImage,handleNextImage, handle
 
 
   return (
-  <section className="border-green-300 border h-auto md:h-110 2xl:h-123 w-full max-w-4xl relative">
+  <section className="border-green-300 border h-auto md:h-120  w-full max-w-4xl relative">
 
         {/* dynamic */}
       <picture className="w-auto h-70">
