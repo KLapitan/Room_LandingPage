@@ -11,16 +11,16 @@ altName:string;
 
 
 
-const roomMobileImageData:Image[] = [
+export const roomMobileImageData:Image[] = [
     {id:0, src:"images/mobile-image-hero1.webp",altName:"mobilehero-1"},
     {id:1,src:"images/mobile-image-hero2.webp",altName:"mobilehero-2"},
     {id:2, src:"images/mobile-image-hero3.webp",altName:"mobilehero-3"},
 ];
 
-const roomDesktopImageData:Image[] = [
-      {id:0, src:"images/desktop-image-hero1.webp",altName:"mobilehero-1"},
-    {id:1,src:"images/desktop-image-hero2.webp",altName:"mobilehero-2"},
-    {id:2,src:"images/desktop-image-hero3.webp",altName:"mobilehero-3"},
+export const roomDesktopImageData:Image[] = [
+      {id:0, src:"images/desktop-image-hero1.webp",altName:"desktophero-1"},
+    {id:1,src:"images/desktop-image-hero2.webp",altName:"desktophero-2"},
+    {id:2,src:"images/desktop-image-hero3.webp",altName:"desktophero-3"},
 ]
 
 

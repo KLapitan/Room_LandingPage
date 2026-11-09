@@ -25,12 +25,29 @@ const HeroImage = ({activeMobileImage,activeDesktopImage,handleNextImage, handle
 
 
   return (
-  <section className="border-green-300 border h-auto md:h-120  w-full max-w-4xl relative">
+  <section className="h-auto md:h-120  w-full max-w-4xl relative">
 
         {/* dynamic */}
       <picture className="w-auto h-70">
-          <img src={activeMobileImage.src} alt={activeMobileImage.altName} className="md:hidden w-full h-full" />
-          <img src={activeDesktopImage.src} alt={activeDesktopImage.altName} className="hidden md:flex w-full h-full" />
+          {/* <img src={activeMobileImage.src} alt={activeMobileImage.altName} className="md:hidden w-full h-full" />
+          <img src={activeDesktopImage.src} alt={activeDesktopImage.altName} className="hidden md:flex w-full h-full" /> */}
+
+          {/* we flagge so in our test we can prevent errors if the image doesnt passed */}
+          {activeMobileImage && (
+  <img
+    src={activeMobileImage.src}
+    alt={activeMobileImage.altName}
+    className="md:hidden w-full h-full"
+  />
+)}
+
+{activeDesktopImage && (
+  <img
+    src={activeDesktopImage.src}
+    alt={activeDesktopImage.altName}
+    className="hidden md:flex w-full h-full"
+  />
+)}
       </picture>
 
       <Button  handleNextImage={handleNextImage}  handlePreviousImage={handlePreviousImage}/>

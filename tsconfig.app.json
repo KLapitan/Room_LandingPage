@@ -4,9 +4,12 @@
     "target": "es2023",
     "lib": ["ES2023", "DOM"],
     "module": "esnext",
-    "types": ["vite/client"],
+    // added jsdom config for test
+    "types": ["vite/client",  "@testing-library/jest-dom"],
     "allowArbitraryExtensions": true,
     "skipLibCheck": true,
+      
+
 
     /* Bundler mode */
     "moduleResolution": "bundler",
