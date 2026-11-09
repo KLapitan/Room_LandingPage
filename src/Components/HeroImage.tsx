@@ -25,7 +25,7 @@ const HeroImage = ({activeMobileImage,activeDesktopImage,handleNextImage, handle
 
 
   return (
-  <section className="h-auto md:h-150  w-full max-w-4xl relative">
+  <section className="h-auto md:h-135  w-full max-w-4xl relative">
 
         {/* dynamic */}
       <picture className="w-auto h-80">
